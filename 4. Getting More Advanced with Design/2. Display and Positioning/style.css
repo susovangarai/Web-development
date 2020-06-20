@@ -1,129 +1,109 @@
-/* Universal Styles */
-
 body {
-  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_foodlogo.png");
+  background-color: #FFF;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #466995;
+  border-bottom: 1px solid #466995;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+ul {
+  margin: 30px auto;
+  padding: 0 20px;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+}
+
+li {
+  color: #FFF;
+  display: inline-block;
+  width: 80px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  width: 80px;
+  text-transform: uppercase;
+}
+
+li:hover {
+  color: #DBE9EE;
+}
+
+h1 {
+  color: #466995;
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #333;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 26px;
+  font-weight: 100;
+  margin: 0 auto 20px auto;
+}
+
+h3 {
+  color: #466995;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 30px;
+}
+
+h4 {
+  color: #466995;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase
+}
+
+p {
+  color: #333;
+  font-family: 'Varela Round', sans-serif;
   font-size: 18px;
 }
 
-a {
-  text-decoration: none;
-}
-
-/* Navigation */
-
-nav {
+footer {
+  background-color: #DBE9EE;
   text-align: center;
-  margin: 10px auto;
+  height: 100px;
 }
 
-nav img {
-  display: block;
-  margin: 10px 0px;
-}
-
-nav span {
-  display: block;
-  font-size: 16px;
-  font-weight: 100;
-  letter-spacing: 2px;
-}
-
-nav a {
-  color: #666666;
-}
-
-/* Content Container */
-
-.content {
+.welcome {
+  background-color: #DBE9EE;
+  box-sizing: border-box;
+  padding: 40px;
+  text-align: center;
   width: 100%;
-  height: 500px;
-  margin: 10px auto;
-  overflow: scroll;
+  position: relative;
+  top: 50px;
 }
 
-/* Content Header */
-
-.header {
-  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_burgerphoto.jpeg");
-  height: 320px;
-  background-position: center;
-  background-size: cover;
+.question {
+  text-align: center;
+  position: relative;
+  top: 40px;
 }
 
-.header h1 {
-  background-color: #05A8AA;
-  color: #FFF;
-  font-family: 'Oswald', sans-serif;
-  font-size: 40px;
-  font-weight: 300;
-  line-height: 40px;
-  width: 68%;
-  padding: 20px;
-  margin: 0 auto;
-}
-
-/* Content Body */
-
-.content .body {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.body p {
-  color: #333333;
-  font-weight: 100;
-  line-height: 34px;
-  width: 90%;
-  margin-top: 18px;
-}
-
-/* Content Button */
-
-.button {
-  border-radius: 4px;
-  color: #05A8AA;
-  display: block;
-  font-weight: 700;
-  width: 200px;
-  padding: 20px;
-  margin: 40px auto;
-  border: 1px solid blue;
-}
-
-.button:hover {
-  background-color: #05A8AA;
-  border: 1px solid #05A8AA;
-  color: #FFF;
-}
-
-/* Content Nutrition */
-
-ul.nutrition {
-  padding: 20px;
-
-}
-
-ul.nutrition li {
+.answer {
+  border: 1px solid #466995;
+  margin: 20px;
   display: inline-block;
-  width: 200px;
-  padding: 10px 20px;
-  margin-bottom: 3px;
-  background-color: #05A8AA;
-  list-style: none;
+
 }
 
-.nutrition .category {
-  color: white;
-  font-weight: 100;
-  letter-spacing: 2px;
-  display: block;
-}
-
-.nutrition .value {
-  color: white;
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: 2px;
+.answer:hover {
+  background: #C0D6DF;
+  color: #FFF;
 }
