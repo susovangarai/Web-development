@@ -7,11 +7,24 @@
     <title>Musicon</title>
     <link href="style.css" rel= "stylesheet">
     <script src="handlebars.min.js"></script>
-    <script id = "templateHB" type = "text/x-handlebars-template" src="handlebars.min.js">
-    <h1>{{title}}</h1>
-    <p>{{body}}</p>
-    <a href="store.html">Shop Now</a>
-    </script>
+    <script id="templateHB" type="text/x-handlebars-template">
+    {{#each instruments}}
+    <article class="instrument">
+          <img class="image" src="{{this.image}}" alt="{{this.image}}">
+          <section class="details">
+            <h2 class="name">{{this.name}}</h2>
+        <p class="description">{{this.description}}</p>
+        {{#if sale}}
+      <p class="price"><del>Price: {{this.price}}</del></p>
+      <p class="sale">On Sale! {{this.sale}}</p>
+      {{else}}
+      <p class="price">Price: {{this.price}}</p>
+      {{/if}}
+
+          </section>
+        </article>
+        {{/each}}
+</script>
   </head>
 
   <body>
@@ -21,10 +34,10 @@
 
         <nav>
           <ul class="navbar">
-          <li class = "current">
+          <li>
           <a href="index.html">Home</a>
           </li>
-          <li>
+          <li class = "current">
           <a href="store.html">Store</a>
           </li>
           <li>
@@ -32,20 +45,19 @@
           </li>
           </ul>
         </nav>
-
       </section>
     </header>
 
-    <article id="introduction">
+    <article id="showcase">
       <section id="information" class="container">
-       
-        <a href="store.html">Shop Now</a>
+
       </section>
     </article>
 
     <footer>
-      <p>&copy; Musicon</p>
+      <p>&copy; Musicon 2018</p>
     </footer>
+
     <script src="main.js"></script>
   </body>
 </html>
